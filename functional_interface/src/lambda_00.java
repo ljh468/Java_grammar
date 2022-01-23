@@ -2,7 +2,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-// 함수형 인터페이스 : 단 하나의 추상 메서드만 선언된 인터페이스
+/***********************************************************************************
+ * 함수형 인터페이스 : 단 하나의 추상 메서드만 선언된 인터페이스
+ ***********************************************************************************/
 @FunctionalInterface
 interface MyFunction {
 //        public abstract int max(int a, int b);

@@ -19,7 +19,7 @@ public class Stream_04 {
          */
         Stream<File> fileStream = Stream.of(fileArr);
 
-//        Stream<String> filenameStream = fileStream.map(File::getName);         // 메서드 참조
+//        Stream<String> filenameStream = fileStream.map(File::getName);         //  메서드 참조
         Stream<String> filenameStream = fileStream.map((File f) -> f.getName()); // 람다식
         filenameStream.forEach(System.out::println);
 
@@ -51,6 +51,7 @@ public class Stream_04 {
         /*******************************************************************
          * 스트림의 스트림을 스트림으로 변환 - flatmap
          * Stream<R> flatMap(Function<T, Stream<R>> mapper)
+         * 스트림의 차원을 줄여줌
          *******************************************************************/
 
         /**

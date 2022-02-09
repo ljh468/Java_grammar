@@ -23,6 +23,7 @@ public class Stream_04 {
         Stream<String> filenameStream = fileStream.map((File f) -> f.getName()); // 람다식
         filenameStream.forEach(System.out::println);
 
+
         // 스트림 다시 생성
         fileStream = Stream.of(fileArr);
 

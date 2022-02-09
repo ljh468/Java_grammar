@@ -1,6 +1,7 @@
 import java.awt.*;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -93,6 +94,27 @@ public class Stream_03 {
         studentStream.sorted(Comparator.comparing((Student s) -> s.getBan()) // 메서드 참조를 람다식으로 변환
                 .thenComparing(Comparator.naturalOrder())) // 2. 기본 정렬
                 .forEach(System.out::println);
+
+        Stream<Student> studentStream2 = Stream.of(
+                new Student("이자바", 3, 300),
+                new Student("김자바", 1, 200),
+                new Student("안자바", 2, 100),
+                new Student("박자바", 2, 150),
+                new Student("소자바", 1, 200),
+                new Student("나자바", 3, 290),
+                new Student("감자바", 3, 180)
+
+        );
+        List<Student> lamda = studentStream2.filter((Student s)->{
+            if (s.getBan() == 1) {
+                return false;}
+            return true;
+        }).collect(Collectors.toList());
+
+        for (Student student : lamda) {
+            System.out.println("student = " + student);
+        }
+
     }
 }
 

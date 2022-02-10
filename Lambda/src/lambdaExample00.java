@@ -1,6 +1,3 @@
-package lamda;
-
-// 구현해야할 추상 메소드가 한개인 인터페이스
 @FunctionalInterface
 interface Print {
     void print(int a, int b);
@@ -12,14 +9,12 @@ class Test {
         System.out.println("콘솔 출력 실행문");
     }
 }
-
-public class lamdaExample00 {
-
+public class lambdaExample00 {
     public static void main(String[] args) {
-        Test noLamda = new Test();
+        Test noLambda = new Test();
 
         // print 메서드를 오버라이딩
-        noLamda.testMethod(new Print() {
+        noLambda.testMethod(new Print() {
             @Override
             public void print(int a, int b) {
                 System.out.println("a와 b의 합은 : " + (a + b));
@@ -27,8 +22,8 @@ public class lamdaExample00 {
             }
         });
 
-        Test lamdaTest = new Test();
-        lamdaTest.testMethod((a, b) -> {
+        Test lambdaTest = new Test();
+        lambdaTest.testMethod((a, b) -> {
             System.out.println("a와 b의 합은 : " + (a + b));
             System.out.println("a와 b의 차는 : " + (a - b));
         });

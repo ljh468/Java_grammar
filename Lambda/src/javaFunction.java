@@ -1,10 +1,7 @@
-package lamda;
-
 import java.util.function.BinaryOperator;
 import java.util.function.IntFunction;
 
 public class javaFunction {
-
     public static void main(String[] args) {
 
         // int 값을 매개변수로 받아 함수를 생성

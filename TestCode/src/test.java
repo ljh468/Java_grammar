@@ -6,17 +6,17 @@ import java.time.temporal.ChronoUnit;
 import java.util.regex.Pattern;
 
 public class test {
-    // ############# 생년월일, 수신인번호 예외처리 ############
-    // 생년월일 유효성체크 : 6자리, 숫자(정규식 처리)
-    // 수신인 번호 : 시작 2자리가 01로 시작하는지 확인(정규식처리) and 총 자리수 9자리 or 10자리
-//    public static boolean isDateOfBirth(String str){
-//        return Pattern.matches("^\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|[3][01])", str);
-//    }
-//
-//    private static boolean isPhone(String str){
-//        return Pattern.matches("^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}$", str);
-//    }
-//
+//     ############# 생년월일, 수신인번호 예외처리 ############
+//     생년월일 유효성체크 : 6자리, 숫자(정규식 처리)
+//     수신인 번호 : 시작 2자리가 01로 시작하는지 확인(정규식처리) and 총 자리수 9자리 or 10자리
+    public static boolean isDateOfBirth(String str){
+        return Pattern.matches("^\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|[3][01])", str);
+    }
+
+    private static boolean isPhone(String str){
+        return Pattern.matches("^01(?:0|1|[6-9])(?:\\d{3}|\\d{4})\\d{4}$", str);
+    }
+
 //    public static void main(String[] args) {
 //
 //        // 생년월일 체크

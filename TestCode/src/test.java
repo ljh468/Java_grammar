@@ -33,17 +33,21 @@ public class test {
 
 
     public static void main(String[] args) {
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime regdt = now.minusSeconds(5);
-        long between = ChronoUnit.SECONDS.between(regdt, now);
+//        LocalDateTime now = LocalDateTime.now();
+//        LocalDateTime regdt = now.minusSeconds(5);
+//        long between = ChronoUnit.SECONDS.between(regdt, now);
+//
+//        System.out.println("now = " + now);
+//        System.out.println("regdt = " + regdt);
+//        System.out.println("between = " + between);
+//        // 포맷 정의
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmmss");
+//        String formatedNow = now.format(formatter);
+//        System.out.println("formatedNow = " + formatedNow);
 
-        System.out.println("now = " + now);
-        System.out.println("regdt = " + regdt);
-        System.out.println("between = " + between);
-        // 포맷 정의
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmmss");
-        String formatedNow = now.format(formatter);
-        System.out.println("formatedNow = " + formatedNow);
+        String c = String.valueOf(34);
+        System.out.println("c = " + c);
+        System.out.println(c.charAt(0));
     }
 
 

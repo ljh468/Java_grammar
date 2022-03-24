@@ -1,4 +1,4 @@
-package Object_Grammer01;
+package Object_grammer01;
 
 public class 객체생성 {
     public static void main(String[] args) {

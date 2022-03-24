@@ -1,4 +1,4 @@
-package Object_Grammer01;
+package Object_grammer01;
 
 class Data2{ int x; }
 class Data3{ int x; }

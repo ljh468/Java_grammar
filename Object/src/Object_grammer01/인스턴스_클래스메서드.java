@@ -1,4 +1,4 @@
-package Object_Grammer01;
+package Object_grammer01;
 
 public class 인스턴스_클래스메서드 {
     /*******************************************************************

@@ -1,4 +1,4 @@
-package Object_Grammer01;
+package Object_grammer01;
 
 class Data{int x;}
 public class 기본형매개변수 {

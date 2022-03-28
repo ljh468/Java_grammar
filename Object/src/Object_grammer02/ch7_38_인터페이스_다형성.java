@@ -24,7 +24,7 @@ class Fighter2 extends Unit2 implements Fightable{
         return (Fightable) new Fighter2(); // Fightable을 구현한 Fighter를 생성해서 반환
     }
 }
-public class ch_7_38_인터페이스_다형성 {
+public class ch7_38_인터페이스_다형성 {
     /*******************************************************************
      * 인터페이스를 이용한 다형성
      * 인터페이스도 구현 클래스의 부모?

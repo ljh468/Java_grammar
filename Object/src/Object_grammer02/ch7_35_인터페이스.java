@@ -1,6 +1,6 @@
 package Object_grammer02;
 
-public interface ch_7_35_인터페이스 {
+public interface ch7_35_인터페이스 {
     /*******************************************************************
      * 인터페이스(interface)
      * 추상 메서드의 집합 (프로그래밍 관점)
@@ -31,7 +31,7 @@ public interface ch_7_35_인터페이스 {
  *     // 인터페이스에 정의된 추상메서드를 모두 구현해야 한다.
  * }
  *******************************************************************/
-class Fighter implements ch_7_35_인터페이스{
+class Fighter implements ch7_35_인터페이스{
 
     @Override
     public String getCardNumber() {

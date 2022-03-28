@@ -12,7 +12,7 @@ class AudioPlayer extends Player{
         System.out.println("재생을 멈춥니다.");
     };
 }
-public class ch_7_31_추상클래스 {
+public class ch7_31_추상클래스 {
     /*******************************************************************
      * 추상클래스(abstract class)
      * 미완성 설계도. 추상(미완성) 메서드를 갖고 있는 클래스

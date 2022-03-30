@@ -1,4 +1,4 @@
-package Objact_grammer03;
+package Object_grammer03;
 
 public class ch8_01_프로그램오류 {
     /*******************************************************************

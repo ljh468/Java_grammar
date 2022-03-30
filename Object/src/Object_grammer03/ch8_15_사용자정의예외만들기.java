@@ -1,4 +1,4 @@
-package Objact_grammer03;
+package Object_grammer03;
 
 public class ch8_15_사용자정의예외만들기 {
     /*******************************************************************

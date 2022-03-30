@@ -1,4 +1,4 @@
-package Objact_grammer03;
+package Object_grammer03;
 
 import java.io.File;
 

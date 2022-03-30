@@ -1,4 +1,4 @@
-package Objact_grammer03;
+package Object_grammer03;
 
 public class ch8_09_예외발생시키기 {
     /*******************************************************************

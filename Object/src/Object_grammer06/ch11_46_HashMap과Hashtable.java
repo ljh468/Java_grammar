@@ -67,7 +67,7 @@ public class ch11_46_HashMap과Hashtable {
             }
         }
         /*******************************************************************
-         * 예제 2 :
+         * 예제 2 : HashMap 명단 가져오기
          *******************************************************************/
         HashMap map2 = new HashMap();
         map2.put("김자바", new Integer(90));
@@ -79,6 +79,7 @@ public class ch11_46_HashMap과Hashtable {
         Set set2 = map2.entrySet();
         Iterator it = set2.iterator();
         while (it.hasNext()) {
+            // Map 내부의 인터페이스 Entry<key, value>
             Map.Entry e = (Map.Entry) it.next();
             System.out.println("이름 : " + e.getKey() + ", 점수 : " + e.getValue());
         }
@@ -97,5 +98,36 @@ public class ch11_46_HashMap과Hashtable {
         System.out.println("평균 : " + (float) total / set2.size());
         System.out.println("최고점수 : " + Collections.max(values));
         System.out.println("최저점수 : " + Collections.min(values));
+
+        /*******************************************************************
+         * 예제 3 :
+         *******************************************************************/
+        String[] data = {"A", "K", "A", "K", "D", "K", "A", "K", "K", "K", "Z", "D"};
+
+        HashMap map3 = new HashMap();
+
+        for(int i = 0; i < data.length; i++){
+            if(map3.containsKey(data[i])){
+                int value = (int) map3.get(data[i]);
+                map3.put(data[i], value + 1);
+            }else{
+                map3.put(data[i], 1);
+            }
+        }
+
+        Iterator it2 = map3.entrySet().iterator();
+        while(it2.hasNext()){
+            Map.Entry entry = (Map.Entry)it2.next();
+            int value = (int) entry.getValue();
+            System.out.println(entry.getKey() + " : " + "#".repeat(value) + " " + value);
+            System.out.println(entry.getKey() + " : " + printBar('#', value) + " " + value);
+        }
+    }
+    public static String printBar(char ch, int value){
+        char[] bar = new char[value];
+        for (int i = 0; i < bar.length; i++) {
+            bar[i] = ch;
+        }
+        return new String(bar);
     }
 }

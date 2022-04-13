@@ -5,7 +5,7 @@ import javax.swing.*;
 public class ch13_24_interrupt {
     /*******************************************************************
      * interrupt()
-     * 대기상태(WAITING)인 쓰레드를 실행대기상태(RUNNABLE)로 만든다.
+     * 대기상태(WAITING)인 쓰레드를 실행대기상태(RUNNABLE)로 만든다. 깨우는
      *
      * void interrupt() : 쓰레드의 interrupted상태를 false에서 true로 변경
      * boolean isaInterrupted() : 쓰레드의 interrupted상태를 반환

@@ -51,7 +51,8 @@ public class ch14_23_스트림의중간연산01 {
                 new Student("나자바", 3, 290),
                 new Student("감자바", 3, 180)
         );
-        studentStream.sorted(Comparator.comparing(Student::getBan) // 반별 정렬
+        // studentStream.sorted(Comparator.comparing(Student::getBan) // 반별 정렬
+        studentStream.sorted(Comparator.comparing((Student s) -> s.getBan())
                 .thenComparing(Comparator.naturalOrder())) // 추가로 기본정렬
                 .forEach(System.out::print);
     }

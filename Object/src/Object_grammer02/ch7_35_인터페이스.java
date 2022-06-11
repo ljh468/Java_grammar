@@ -11,14 +11,14 @@ public interface ch7_35_인터페이스 {
      * 추상클래스는 일반 클래스에 추상메서드가 들어있는 클래스
      *******************************************************************/
     /*******************************************************************
-     * 인터페이스의 조상은 인터페이스만 가능(Object가 최고 조상 아님
+     * 인터페이스의 조상은 인터페이스만 가능 (Object가 최고 조상 아님)
      * 다중 상속이 가능. (추상메서드는 구현부가 없기 때문에 충돌해도 문제없음)
      *******************************************************************/
     public static final int SPADE = 4; // 상수
     final int DIAMOND = 3; // public static final 생략가능
     static int HEART = 2;
     int CLOVER = 1;
-    
+
     public abstract String getCardNumber(); // 추상 메서드
     String getCardKind(); // public abstract 생략가능
 }

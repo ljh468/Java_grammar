@@ -6,9 +6,6 @@ import java.util.OptionalInt;
 import java.util.OptionalLong;
 
 public class ch14_35_Optional객체02 {
-  /*******************************************************************
-   * 
-   *******************************************************************/
   public static void main(String[] args) {
     Optional<String> optStr = Optional.of("abcde");
     Optional<Integer> optInt = optStr.map((s) -> s.length());

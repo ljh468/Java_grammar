@@ -83,4 +83,13 @@ class Student implements Comparable<Student>{
     public int compareTo(Student s) {
         return s.totalScore - this.totalScore;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", ban=" + ban +
+                ", totalScore=" + totalScore +
+                '}';
+    }
 }

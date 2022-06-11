@@ -15,7 +15,7 @@ public class ch14_07_function패키지 {
      * Supplier<T> : 매개변수는 없고, 반환값만 있음
      * Consumer<T> : Supplier와 반대로 매개변수만 있고, 반환값이 없음
      * Function<T, R> : 일반적인 함수. 하나의 매개변수를 받아서 결과를 반환
-     * Predicate<T> : 조건식을 표현하는데 사용됨. 매개변수는 하나, 반환타입은 boolean
+     * Predicate<T> :
      *                ex : Predicate<String> isEmptyStr = s -> s.length() == 0
      ******************************************************************/
     /*******************************************************************
